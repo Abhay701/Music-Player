@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#111111"
+    android:layout_marginTop="1dp"
+    android:id="@+id/audio_item">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/card"
+        android:layout_marginStart="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="10dp"
+        app:cardCornerRadius="11dp">
+
+
+        <ImageView
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:id="@+id/music_img"
+            android:src="@mipmap/ic_launcher_round"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="File Name"
+        android:layout_toEndOf="@+id/card"
+        android:layout_marginStart="10dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/music_file_name"/>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/menuMore"
+        android:src="@drawable/ic_baseline_more"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        android:paddingLeft="17dp"/>
+
+    <!-- Green dot -->
+    <View
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:id="@+id/red_dot"
+        android:background="@drawable/green_dot"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="31dp" />
+
+</RelativeLayout>
